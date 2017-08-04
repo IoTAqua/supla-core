@@ -1,0 +1,1 @@
+* *     * * *   root   php /var/www/supla-cloud/bin/console supla:maintenance min 2>> /var/log/supla-maintenance-min.err.log > /var/log/supla-maintenance-min.log

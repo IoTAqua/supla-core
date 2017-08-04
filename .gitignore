@@ -10,6 +10,7 @@ tmp/
 local.properties
 .settings/
 .loadpath
+*.dmg
 
 # External tool builders
 .externalToolBuilders/
@@ -58,3 +59,5 @@ valgrind-suppressions.cfg
 
 /supla-dev/Debug/supla-dev
 /supla-dev/Release/supla-dev
+
+/supla-console-client/Debug/supla-console-client

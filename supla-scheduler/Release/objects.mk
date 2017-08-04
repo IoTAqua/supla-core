@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -l$(LIBMYSQL)
+LIBS := -lmysqlclient -lpthread -ldl -lz
 

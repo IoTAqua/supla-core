@@ -1,0 +1,1 @@
+1 22     * * *   root   php /var/www/supla-cloud/bin/console supla:maintenance day 2>> /var/log/supla-maintenance-day.err.log > /var/log/supla-maintenance-day.log

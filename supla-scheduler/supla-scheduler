@@ -1,0 +1,1 @@
+1 */4    * * *   root   php /var/www/supla-cloud/bin/console supla:generate-schedules-executions 2>> /var/log/supla-generate-schedules-executions.err.log > /var/log/supla-generate-schedules-executions.log

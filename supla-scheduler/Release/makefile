@@ -44,7 +44,7 @@ all: supla-scheduler
 supla-scheduler: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross G++ Linker'
-	g++ -pthread -lrt -o "supla-scheduler" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -o "supla-scheduler" $(OBJS) $(USER_OBJS) $(LDFLAGS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
