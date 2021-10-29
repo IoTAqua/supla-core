@@ -1,0 +1,3 @@
+[submodule "supla-client/OpenSSL-for-iPhone"]
+	path = supla-client/OpenSSL-for-iPhone
+	url = https://github.com/IoTAqua/OpenSSL-for-iPhone.git
