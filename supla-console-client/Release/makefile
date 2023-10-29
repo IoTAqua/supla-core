@@ -56,7 +56,7 @@ main-build: supla-console-client
 supla-console-client: $(OBJS) $(USER_OBJS) makefile $(OPTIONAL_TOOL_DEPS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross G++ Linker'
-	g++ -L$(SSLDIR)/lib -pthread -lrt -o "supla-console-client" $(OBJS) $(USER_OBJS) $(LIBS) -lssl -lcrypto
+	g++ -L$(SSLDIR)/lib -pthread -o "supla-console-client" $(OBJS) $(USER_OBJS) $(LIBS) -lssl -lcrypto
 	@echo 'Finished building target: $@'
 	@echo ' '
 

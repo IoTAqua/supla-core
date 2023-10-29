@@ -64,7 +64,7 @@ src/supla-client-lib/%.o: ../src/supla-client-lib/%.c src/supla-client-lib/subdi
 src/supla-client-lib/%.o: ../src/supla-client-lib/%.cpp src/supla-client-lib/subdir.mk
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross G++ Compiler'
-	g++ -DNOMYSQL=1 -I$(SSLDIR)/include -O3 -Wall -fsigned-char  -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	g++ -std=c++11 -DNOMYSQL=1 -I$(SSLDIR)/include -O3 -Wall -fsigned-char  -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
